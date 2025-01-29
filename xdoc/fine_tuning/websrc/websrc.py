@@ -936,7 +936,7 @@ def load_and_cache_examples(args, tokenizer, max_depth=50, evaluate=False, outpu
     cached_features_file = os.path.join(args.cache_dir, 'cached_{}_{}_{}_{}_{}_{}'.format(
         'dev' if evaluate else 'train',
         "markuplm",
-        str(args.max_seq_length),
+        str(args.max_answer_length),
         str(max_depth),
         args.web_num_features,
         args.model_type
